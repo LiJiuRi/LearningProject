@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-public class TestFilter extends HandlerInterceptorAdapter {
-    private final Logger logger = LoggerFactory.getLogger(TestFilter.class);
+public class TestFilter{
+    /*private final Logger logger = LoggerFactory.getLogger(TestFilter.class);
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
             throws Exception {
@@ -26,6 +26,6 @@ public class TestFilter extends HandlerInterceptorAdapter {
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex)
-            throws Exception {}
+            throws Exception {}*/
 }
 

@@ -18,6 +18,6 @@ public class WebAppConfigurer implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         // 可添加多个
         registry.addInterceptor(new DemoInterceptor()).addPathPatterns("/**");
-        registry.addInterceptor(new TestFilter()).addPathPatterns("/**");
+        //registry.addInterceptor(new TestFilter()).addPathPatterns("/**");
     }
 }

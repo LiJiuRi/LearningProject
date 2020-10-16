@@ -9,6 +9,10 @@
   <sql id="Base_Column_List" >
     id, name
   </sql>
+  <insert id="insert" parameterType="com.example.transaction.dto.Role" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+    insert into role (name)
+    values ( #{name,jdbcType=VARCHAR})
+  </insert>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" useCache="true">
     select
     <include refid="Base_Column_List" />
@@ -24,10 +28,6 @@
     delete from role
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.example.transaction.dto.Role" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
-    insert into role (name)
-    values ( #{name,jdbcType=VARCHAR})
-  </insert>
   <insert id="insertBatch" parameterType="java.util.List" >
     insert into role (id, name)
     values
